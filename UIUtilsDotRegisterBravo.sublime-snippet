@@ -1,19 +1,18 @@
 <snippet>
   <content><![CDATA[
-
 UIUtils.register(${1}, {
-  type: '${2:button}',
-  label({component}) {
-    console.log(component, '#### component ####');
-    return _.get(component.props, 'template.label')
-    || UIUtils.red(_.get(component.props, 'template.id'));
-    },
+  type: '${2}',
+  label: '${3}',
+  ${4}// label({component}) {
+    ${5}//return _.get(component.props, '${8:template}.label')
+    ${6}//|| UIUtils.red(_.get(component.props, 'template.id'));
+    ${7}//},
   events: {}
 });
 
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>uir</tabTrigger>
+  <tabTrigger>uib</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope>source.jsx</scope> -->
 </snippet>
