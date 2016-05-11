@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-console.log(${1:sup}, '#### ${2:flag} ####');
+console.log(${1:consoleLog}, '#### ${2:consoleLog} ####');
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>console</tabTrigger>

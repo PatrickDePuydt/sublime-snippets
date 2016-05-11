@@ -4,11 +4,12 @@ UIUtils.register(${1}, {
   type: '${2}',
   label: '${3}',
   ${4}// label({component}) {
-    ${5}//return _.get(component.props, '${6:template}.label')
-    //|| UIUtils.red(_.get(component.props, 'template.id'));
-  },
+    ${5}//return _.get(component.props, '${8:template}.label')
+    ${6}//|| UIUtils.red(_.get(component.props, 'template.id'));
+    ${7}//},
   events: {}
 });
+
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>uir</tabTrigger>
