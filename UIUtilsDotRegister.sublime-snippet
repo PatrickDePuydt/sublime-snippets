@@ -3,11 +3,10 @@
 UIUtils.register(${1}, {
   type: '${2}',
   label: '${3}',
-  ${4}// label(action){
-    // let component = action.component;
-    // let innerLabel = _.get(component, 'props.view.label');
-    // return innerLabel || UIUtils.red(_.get(component, 'props.view.id'));
-  // },
+  ${4}// label({component}) {
+    ${5}//return _.get(component.props, '${6:template}.label')
+    //|| UIUtils.red(_.get(component.props, 'template.id'));
+  },
   events: {}
 });
 ]]></content>
