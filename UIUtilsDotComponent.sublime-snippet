@@ -1,0 +1,26 @@
+<snippet>
+  <content><![CDATA[
+
+UIUtils.register(${1:thing}, {
+  type: '${2:otherThing}',
+  label({component}) {
+    console.trace(`%c == component ====> `,` color:white; background:coral; padding:3px; border-radius:10px;`, component);
+
+    console.trace(`%c == _.get(component.props) ====> `,` color:white; background:dodgerblue; padding:3px; border-radius:10px;`, _.get(component.props, 'id'));
+
+    let availableId = _.get(component.props, 'id');
+
+    return _.get(component.props, 'label')
+    || UIUtils.deCamelCase(availableId)
+    || UIUtils.red(_.get(component.props, 'id'));
+
+  },
+  events: {}
+});
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>uic</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.jsx</scope> -->
+</snippet>
