@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+let checker = meta.type;
+if (checker === 'missing') {
+
+  console.trace(`%c == meta ====> `,` color:white; background:coral; padding:3px; border-radius:10px;`, meta);
+
+  console.trace(`%c == cmpClass ====> `,` color:white; background:dodgerblue; padding:3px; border-radius:10px;`, cmpClass);
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>uit</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.jsx</scope> -->
+</snippet>
