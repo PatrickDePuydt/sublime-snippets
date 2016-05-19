@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-console.log(`%c ${1:LogFired} √ `,` color:white; background:mediumspringgreen; padding:3px; border-radius:10px;`);
+console.log(`%c ${1:Log} Fired √ `,` color:white; background:mediumspringgreen; padding:3px; border-radius:10px;`);
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>log</tabTrigger>

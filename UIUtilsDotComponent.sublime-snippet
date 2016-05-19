@@ -2,16 +2,25 @@
   <content><![CDATA[
 
 UIUtils.register(${1:thing}, {
-  type: '${2:otherThing}',
+  type: '${2:actionVerb}',
   label({component}) {
-    console.trace(`%c == component ====> `,` color:white; background:coral; padding:3px; border-radius:10px;`, component);
+    const primaryId = _.get(component.props, '.id');
+    let fallbackId = _.get(component.props, '.id');
 
-    console.trace(`%c == _.get(component.props) ====> `,` color:white; background:dodgerblue; padding:3px; border-radius:10px;`, _.get(component.props, 'id'));
+    console.trace(`%c component `,` color:white; background:springgreen; padding:3px; border-radius:30px;`, component);
 
-    let availableId = _.get(component.props, 'id');
+    console.trace(`%c primaryId ====> `,` color:white; background:dodgerblue; padding:3px; border-radius:10px;`, primaryId);
 
-    return _.get(component.props, 'label')
-    || UIUtils.red(_.get(component.props, 'id'));
+
+    if (primaryId === undefined && fallbackId === undefined) {
+        console.warn(`%c ! `,` color:magenta; background:gold; line-height: 10px; border-radius:50px; border: 1px solid black; font-style:bold;`,
+
+          'Could not find either the primary or fallback Id associated with this component. \nThis is usually because the _.get() arguements do not match the incoming data structure. \nThe component below is what\'s causing this issue.');
+        console.warn(component);
+    }
+
+    return primaryId
+    //|| UIUtils.red(fallbackId);
 
   },
   events: {}

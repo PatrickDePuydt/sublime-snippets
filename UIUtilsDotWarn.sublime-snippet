@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+
+let fallbackId = _.get(component.props, '${1:}.id');
+
+if (primaryId === undefined && fallbackId === undefined) {
+    console.warn(`%c ! `,` color:black; background:gold; line-height: 10px; border-radius:50px; border: 1px solid black;`,
+
+      'Could not find either the primary or fallback Id associated with this component. \nThis is usually because the _.get() arguements do not match the incoming data structure. \nThe component below is what\'s causing this issue.');
+    console.warn(component);
+}
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>uiw</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.jsx</scope> -->
+</snippet>
