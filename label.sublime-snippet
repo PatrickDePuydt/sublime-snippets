@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+label({component}) {
+  const primaryId = _.get(component.props, '${1:}label');
+  const fallbackId = UIUtils.red(_.get(component.props, '${2:}id'));
+
+  if (primaryId) {
+    return primaryId
+  } else {
+    return ${3:fallbackId}
+  }
+
+},
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>lab</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.jsx</scope> -->
+</snippet>
