@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-console.trace(`%c ${1:consoleTrace} ಠ_ಠ ==> `,` color:white; background:crimson; padding:3px; border-radius:10px;`, ${2:consoleTrace});
+console.trace(`%c ${1:originFile}: ${2:fromMethod}() ?:${4:tracingWhat} ==> `,` color:white; background:${3:indigo}; padding:3px; border-radius:10px;`, tracingWhat);
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>trace</tabTrigger>
