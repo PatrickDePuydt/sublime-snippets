@@ -1,9 +1,11 @@
 <snippet>
   <content><![CDATA[
-console.trace(`%c src:${1:originFile} method:${2:fromMethod}() ??:${4:tracingWhat} ==> `,` color:white; background:${3:indigo}; padding:3px; border-radius:10px;`, tracingWhat);
+
+console.trace(`%c # ${1:Component} # `,` color:floralwhite; background:dodgerblue; padding:3px; border-radius:30px;`, ${2:component});
+
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>trace</tabTrigger>
+  <tabTrigger>quick</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope>source.python</scope> -->
 </snippet>
