@@ -1,9 +1,9 @@
 <snippet>
   <content><![CDATA[
-console.trace(`%c == ${1:secondaryConsoleTrace} ====> `,` color:white; background:magenta; padding:3px; border-radius:10px;`, ${2:secondaryConsoleTrace});
+console.trace(`%c ⚡⚡⚡ \${ ${1:} }  ⚡⚡⚡ `,` color:white; background:${2:lightgreen}; padding:3px; border-radius:10px;`);
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>second</tabTrigger>
+  <tabTrigger>fast</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope>source.python</scope> -->
 </snippet>
