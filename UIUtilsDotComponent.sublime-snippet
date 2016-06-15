@@ -13,10 +13,8 @@ UIUtils.register(${1:}, {
 
     if (primaryId) {
       return primaryId
-    } else {
-      return fallbackId
     }
-
+      return fallbackId
   },
   events: {}
 });
