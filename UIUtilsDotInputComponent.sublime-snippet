@@ -1,0 +1,27 @@
+<snippet>
+  <content><![CDATA[
+
+UIUtils.register(${1:}, {
+  type: '${2:}',
+  label({component}) {
+    const primaryId = _.get(component.props, 'label');
+    let fallbackId = UIUtils.red(_.get(component.props, 'id'));
+
+    console.trace(`%c (づ｡◕‿‿◕｡)づ  component `,` color:white; background:springgreen; padding:3px; border-radius:30px;`, component);
+
+    console.trace(`%c ಠ~ಠ primaryId ====> `,` color:white; background:dodgerblue; padding:3px; border-radius:10px;`, primaryId);
+
+    if (primaryId) {
+      return primaryId
+    }
+      return fallbackId
+  },
+  events: {}
+});
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>uic</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.jsx</scope> -->
+</snippet>

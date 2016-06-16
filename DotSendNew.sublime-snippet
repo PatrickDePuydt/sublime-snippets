@@ -1,0 +1,39 @@
+<snippet>
+  <content><![CDATA[
+
+function getLabel({component}){
+  const title = component.props.label;
+  const labelValue = _.get(component.props, 'label.value');
+  const primaryId = title || labelValue;
+  const fallbackId = UIUtils.generateAutomatedLabel(_.get(component.props, 'control.id'));
+
+  if (primaryId) {
+    return primaryId;
+  }
+    return fallbackId;
+}
+
+UIUtils.register(${1:component}, {
+  type: '${2:finalType}',
+  label: getLabel,
+  events: {
+    input(action) {
+      const label = getLabel(action);
+      const userInputValue = action.meta;
+
+      console.trace(`%c (づ｡◕‿‿◕｡)づ  label `,` color:white; background:springgreen; padding:3px; border-radius:30px;`, label);
+
+      console.trace(`%c ಠ~ಠ userInputValue ====> `,` color:white; background:dodgerblue; padding:3px; border-radius:10px;`, userInputValue);
+
+      return `Label: <b>${label}</b> & User Input Value: <b><i>${userInputValue}</b></i>`;
+
+    }
+  }
+});
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>uii</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.jsx</scope> -->
+</snippet>
