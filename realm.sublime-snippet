@@ -1,14 +1,11 @@
 <snippet>
   <content><![CDATA[
-${1:declareFunctionName}() {
-
-  ${2:next};
-
-},
-
+static contextTypes = {
+  realm: React.PropTypes.object
+}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>go</tabTrigger>
+  <tabTrigger>realm</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>source.js, source.jsx</scope>
+  <!-- <scope>source.jsx</scope> -->
 </snippet>

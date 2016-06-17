@@ -1,0 +1,27 @@
+<snippet>
+  <content><![CDATA[
+
+UIUtils.send({
+  component: this,
+  event: ${1:evt},
+  meta: ${2:userInput},
+  insertion: function(previousAction, currentAction) {
+    let insType = 'append';
+    if (previousAction) {
+      const lastComponent = previousAction.component;
+      const currentComponent = currentAction.component;
+      const lastEvent = previousAction.event;
+      if (lastComponent === currentComponent && lastEvent.type === 'input') {
+        insType = 'replace';
+      }
+    }
+    return insType;
+  }
+});
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>uik</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.jsx</scope> -->
+</snippet>
