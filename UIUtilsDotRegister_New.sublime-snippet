@@ -25,7 +25,7 @@ UIUtils.register(${1:component}, {
 
       console.trace(`%c ಠ~ಠ userInputValue ====> `,` color:white; background:dodgerblue; padding:3px; border-radius:10px;`, userInputValue);
 
-      return `Label: <b>${3:label}</b> & User Input Value: <b><i>${4:userInputValue}</b></i>`;
+      return `Label: <b>\${${3:label}}</b> & User Input Value: <b><i>\${${4:userInputValue}}</b></i>`;
 
     }
   }
@@ -33,7 +33,7 @@ UIUtils.register(${1:component}, {
 
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>uii</tabTrigger>
+  <tabTrigger>uir</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope>source.jsx</scope> -->
 </snippet>
