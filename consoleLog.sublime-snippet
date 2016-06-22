@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
 
-console.log(`%c ${1:Log} Fired √ `,` color:honeydew; background:mediumspringgreen; padding:3px; border-radius:10px;`${2:});
+console.warn(`%c ${1:Log} Fired √ `,` color:honeydew; background:mediumspringgreen; padding:3px; border-radius:10px;`${2:});
 
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

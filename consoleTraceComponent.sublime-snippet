@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
 
-console.trace(`%c # ${2:component} # `,` color:azure; background:${1:dodgerblue}; padding:3px; border-radius:30px;`, component);
+console.trace(`%c 🎯 ${2:component} 🎯 `,` color:azure; background:${1:dodgerblue}; padding:3px; border-radius:30px;`, component);
 
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
