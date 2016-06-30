@@ -17,15 +17,13 @@ UIUtils.register(${1:component}, {
   type: '${2:finalType}',
   label: getLabel,
   events: {
-    input(action) {
-      const label = getLabel(action);
-      const userInputValue = action.meta;
+    ${3:EVENTTYPE}(action) {
+      // const label = getLabel(action);
+      // const userInputValue = action.meta;
 
-      console.trace(`%c (づ｡◕‿‿◕｡)づ  label `,` color:white; background:springgreen; padding:3px; border-radius:30px;`, label);
+      console.trace(`%c (づ｡◕‿‿◕｡)づ  action `,` color:white; background:springgreen; padding:3px; border-radius:30px;`, action);
 
-      console.trace(`%c ಠ~ಠ userInputValue ====> `,` color:white; background:dodgerblue; padding:3px; border-radius:10px;`, userInputValue);
-
-      return `Label: <b>\${${3:label}}</b> & User Input Value: <b><i>\${${4:userInputValue}}</b></i>`;
+      return `Label: <b>\${${4:label}}</b> & User Input Value: <b><i>\${${4:userInputValue}}</b></i>`;
 
     }
   }
