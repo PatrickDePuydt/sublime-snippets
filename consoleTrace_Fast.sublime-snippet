@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-console.trace(`%c ⚡⚡⚡ \${ ${1:} }  ⚡⚡⚡ `,` color:magenta; background:${2:darkslateblue}; padding:3px; border-radius:10px;`${3:});
+console.trace(`%c ⚡⚡⚡ \${ ${1:} }  ⚡⚡⚡ `,` color:${2:magenta}; background:${3:darkslateblue}; padding:3px; border-radius:10px;`${4:});
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>fast</tabTrigger>
