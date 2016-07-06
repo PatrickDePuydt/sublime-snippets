@@ -2,6 +2,10 @@
   <content><![CDATA[
 
 function getLabel({component}){
+
+  console.trace(`%c -- component -- `,` color:azure;
+  background:dodgerblue; padding:3px; border-radius:30px;`, component);
+
   const title = component.props.label;
   const labelValue = _.get(component.props, 'label.value');
   const primaryId = title || labelValue;
@@ -18,13 +22,12 @@ UIUtils.register(${1:component}, {
   label: getLabel,
   events: {
     ${3:EVENTTYPE}(action) {
-      // const label = getLabel(action);
-      // const userInputValue = action.meta;
+      const label = getLabel(action);
+      const userInputValue = action.meta;
 
       console.trace(`%c (づ｡◕‿‿◕｡)づ  action `,` color:white; background:springgreen; padding:3px; border-radius:30px;`, action);
 
-      return `Label: <b>\${${4:label}}</b> & User Input Value: <b><i>\${${4:userInputValue}}</b></i>`;
-
+      return `typed <b><i>\${userInputValue}</b></i> in the <b>\${${4:label}}</b> SOMETHING OR OTHER`;
     }
   }
 });
