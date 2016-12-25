@@ -1,9 +1,10 @@
 <snippet>
   <content><![CDATA[
-console.trace(`%c ${1:huh} `,` color:cyan; background:${3:dodgerblue}; padding:3px;`, ${2:wot m8});
+${1:name}
+${1:name}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>q</tabTrigger>
+  <tabTrigger>double</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope>source.python</scope> -->
 </snippet>

@@ -1,12 +1,9 @@
 <snippet>
   <content><![CDATA[
-constructor(props) {
-  super(props);
-  this.onClick = this.onClick.bind(this);
-}
+const ${1:name} = ${2:assignedValue};${3:}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>tor</tabTrigger>
+  <tabTrigger>const</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <!-- <scope>source.jsx</scope> -->
+  <!-- <scope>source.python</scope> -->
 </snippet>
