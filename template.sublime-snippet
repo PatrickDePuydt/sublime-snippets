@@ -1,9 +1,9 @@
 <snippet>
   <content><![CDATA[
-const ${1:name} = ${2:assignedValue};${3:}
+console.log(`%c ${1:log} `,` color:${3:cyan}; background:${2:dodgerblue};`,${1:});${4:}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>const</tabTrigger>
+  <tabTrigger></tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope>source.python</scope> -->
 </snippet>
