@@ -1,6 +1,6 @@
 <snippet>
 	<content>
-console.log($1);
+console.log(`%c ${1:log} `,` color:${3:cyan}; background:${2:dodgerblue};`, ${1:});
 	</content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>log</tabTrigger>
