@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-Heting Li <Li_Heting@bah.com>; Sarkar, Shayan [USA] <Sarkar_Shayan@bah.com>; Patterson, William [USA] <Patterson_William@bah.com>; Balasanyan, Mikhail [USA] <Balasanyan_Mikhail@bah.com>; Kasik, Olivia [USA] <Kasik_Olivia@bah.com>; Bonnie Walters <walters_bonnie@bah.com>; Klein, Matthew [USA] <Klein_Matthew@bah.com>; Bryant, Tyler [USA] <Bryant_Tyler@bah.com>; Dukes, Lena [USA] <dukes_lena@bah.com>; Nuon, Robert [USA] <nuon_robert@bah.com>
-]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>email</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
-</snippet>
