@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-border: 4px solid ${1:gold};
+border: 4px solid ${1:gold;}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>border</tabTrigger>

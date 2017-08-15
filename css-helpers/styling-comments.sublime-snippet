@@ -1,11 +1,14 @@
 <snippet>
 	<content><![CDATA[
-```
-\$: ${1:}
-```
+// Fonts
+${1:}
+// Positioning & Sizing (Margin/Padding/Flex)
+${2:}
+// Special Teams
+${3:}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>4</tabTrigger>
+	<tabTrigger>1</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>
