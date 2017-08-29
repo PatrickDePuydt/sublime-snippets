@@ -1,18 +1,9 @@
 <snippet>
 	<content><![CDATA[
-// Background & Borders
-border: 6px solid ${1:gold};
-// Positioning & Display
-${2:}
-// Sizing
-${3:}
-// Font Works
-${4:}
-// Special
-
+[ ] ${1:}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>convention</tabTrigger>
+	<tabTrigger>2</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>

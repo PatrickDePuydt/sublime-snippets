@@ -1,0 +1,45 @@
+<snippet>
+	<content><![CDATA[
+${1:rule} {
+
+	// MOBILE STYLES
+
+	// BACKGROUND & BORDERS
+	border: 6px solid ${2:gold};
+	
+	// POSITIONING & DISPLAY
+	${3:}
+	
+	// SIZING
+	
+	// FONT WORKS
+	
+	// SPECIAL
+
+	//// MEDIA QUERIES
+	// Phone
+	// @media screen and (min-width: $screen-xs-min) {
+	//  border: 4px solid cyan;
+	// } 
+	
+	// Tablet
+	// @media screen and (min-width: $screen-sm-min) {
+	//   border: 4px solid mediumspringgreen;
+	// }
+	
+	// Small Screen
+	// @media screen and (min-width: $screen-md-min) {
+  	// border: 4px solid deeppink;
+	// }
+	
+	// Desktop
+	// @media screen and (min-width: $screen-lg-min) {
+	//  border: 4px solid firebrick;
+	// }
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>rule</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
