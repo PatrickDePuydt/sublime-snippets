@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+// MOBILE
+border: 6px solid cyan
+
+// TABLET
+@media screen and (min-width: $screen-sm-min)
+  border: 6px solid magenta
+
+// SMALL SCREEN
+@media screen and (min-width: $screen-md-min)
+  border: 6px solid yellow
+
+// DESKTOP
+@media screen and (min-width: $screen-lg-min)
+  border: 6px solid black
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>rule</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
