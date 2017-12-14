@@ -1,0 +1,48 @@
+<snippet>
+	<content><![CDATA[
+# ${1:TICKETNUMBER}
+## DESCRIPTION
+${3:}
+
+### ${2:APP}
+[EPIC](https://idmeinc.atlassian.net/browse/IDME-)
+[${1:TICKETNUMBER}:](https://idmeinc.atlassian.net/browse/IDME-${1:TICKETNUMBER})
+[RELATED-TICKETS:](https://idmeinc.atlassian.net/browse/IDME-)
+[PULL REQUEST:](https://github.com/IDme/idme-${2:APP}/pull/)
+[EMAIL:]()
+FILES:
+```
+
+```
+
+## NOTES
+***
+${4:}
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+## TODO
+### Where you left off:
+[ ] 
+***
+## QUESTIONS
+***
+## UNRESOLVED // UNFINISHED
+*** -->
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>admin-init</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
