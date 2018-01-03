@@ -1,14 +1,13 @@
 <snippet>
 	<content><![CDATA[
-# ${1:TICKETNUMBER}
+# ${1:TICKETNUMBER} - ${2:SHORT_DESCRIPTION}
 ## DESCRIPTION
-${3:}
+${4:}
 
-### ${2:APP}
-[EPIC](https://idmeinc.atlassian.net/browse/IDME-)
-[${1:TICKETNUMBER}:](https://idmeinc.atlassian.net/browse/IDME-${1:TICKETNUMBER})
-[RELATED-TICKETS:](https://idmeinc.atlassian.net/browse/IDME-)
-[PULL REQUEST:](https://github.com/IDme/idme-${2:APP}/pull/)
+### App: `idme-${3:APP}`
+[**IDME-${1:TICKETNUMBER}**:](https://idmeinc.atlassian.net/browse/IDME-${1:TICKETNUMBER})
+<!-- [RELATED-TICKETS:](https://idmeinc.atlassian.net/browse/IDME-) -->
+<!-- [PULL REQUEST:](https://github.com/IDme/idme-${3:APP}/pull/) -->
 [EMAIL:]()
 FILES:
 ```
@@ -17,7 +16,7 @@ FILES:
 
 ## NOTES
 ***
-${4:}
+${5:}
 
 
 
@@ -31,6 +30,8 @@ ${4:}
 
 
 <!-- 
+[**EPIC**](https://idmeinc.atlassian.net/browse/IDME-)
+
 ## TODO
 ### Where you left off:
 [ ] 
