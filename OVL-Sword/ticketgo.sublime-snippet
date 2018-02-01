@@ -1,0 +1,33 @@
+<snippet>
+	<content><![CDATA[
+_Last Update: 2/${1:00}/18 _
+Status: ${20: On Deck}
+&nbsp;
+**⚡: ${2:Yellow Hamster}**
+
+# ${3: Navy Cow}
+Description:
+${4: }
+
+## Completion Criteria:
+* ${5: }
+
+***
+&nbsp;
+
+**Tasks**
+* ${6: One}
+* ${7: Two}
+* ${8: Three}
+
+***
+&nbsp;
+
+**Notes**
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ticketgo</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
