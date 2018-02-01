@@ -1,50 +1,33 @@
 <snippet>
 	<content><![CDATA[
-# ${1:TICKETNUMBER} - ${2:SHORT_DESCRIPTION}
-## DESCRIPTION
+# ${1:IDME}-${2:TICKET}
+## ${3:SHORT_DESCRIPTION}
+[**${1:IDME}-${2:TICKET}**:](https://idmeinc.atlassian.net/browse/${1:IDME}-${2:TICKET})
+***
+&nbsp;
+
+
+## NOTES
+***
 ${4:}
 
-### App: `idme-${3:APP}`
-[**IDME-${1:TICKETNUMBER}**:](https://idmeinc.atlassian.net/browse/IDME-${1:TICKETNUMBER})
-<!-- [RELATED-TICKETS:](https://idmeinc.atlassian.net/browse/IDME-) -->
-<!-- [PULL REQUEST:](https://github.com/IDme/idme-${3:APP}/pull/) -->
-[EMAIL:]()
+		
+***
 FILES:
 ```
 
 ```
 
-## NOTES
-***
-${5:}
-
-
-
-
-
 ***
 
 ## Checklist
+[ ] Tests (Rspec)
 [ ] Changelog
 [ ] Rebase
 
 
 
 
-
-
-
-<!-- 
-[**EPIC**](https://idmeinc.atlassian.net/browse/IDME-)
-
-## TODO
-### Where you left off:
-[ ] 
-***
-## QUESTIONS
-***
-## UNRESOLVED // UNFINISHED
-*** -->
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
